@@ -45,7 +45,7 @@ const [firstImage , setFirstImage]=useState(true)
     return (
         <>
 
-            <div className="h-fit pb-9 ">
+            <div className="h-fit pb-9  ">
                 <div className="w-screen-lg h-[100vh]  mx-auto relative">
                     {firstImage && <div className='absolute  h-full w-full '>
                          <img className='h-full w-full object-cover absolute -z-10' src={image1} alt=""/>

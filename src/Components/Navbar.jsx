@@ -37,15 +37,6 @@ const Navbar=()=>{
         </div>
             {/***********navbar second section***********/}
 
-            {/**************for mobile view***********/}
-            {showMobilenav && <div className="  mt-20 gap-0 font-bold  absolute w-[95%] mx-3 bg-white flex flex-col items-center h-fit rounded-b-3xl z-30   md:hidden">
-                <p className="border-b  w-[96%] text-center py-3">Home</p>
-                <p className="border-b w-[96%]  text-center py-3">Properties</p>
-                <p className=" border-b w-[96%] text-center py-3">Property Details</p>
-                <p className=" w-[96%] text-center py-3 rounded-b-3xl">Contact Us</p>
-            </div>}
-
-
             <div className="h-24 border-b-[1px]  border-gray-300 flex justify-between items-center ps-2 lg:ps-10 xl:ps-28 pe-2 bg-white text-black xl:pe-32 lg:pe-10 sticky top-0 z-20">
                 <div className="flex justify-between w-full md:w-auto "><h1 className="text-3xl me-0 md:me-8 font-bold ms-2 text-black">VILLA</h1><span onClick={gotoMobilenav} className=" font-bold me-2 inline md:hidden"><i
                     className="fa fa-bars fa-lg"></i></span>
@@ -65,6 +56,13 @@ const Navbar=()=>{
                 </div>
 
             </div>
+            {/**************for mobile view***********/}
+            {showMobilenav && <div className="   gap-0 font-bold  absolute w-[95%] mx-3 bg-white flex flex-col items-center h-fit rounded-b-3xl   md:hidden  sticky top-20 z-20 ">
+                <p className="border-b  w-[96%] text-center py-3">Home</p>
+                <p className="border-b w-[96%]  text-center py-3">Properties</p>
+                <p className=" border-b w-[96%] text-center py-3">Property Details</p>
+                <p className=" w-[96%] text-center py-3 rounded-b-3xl">Contact Us</p>
+            </div>}
         </>
     )
 }

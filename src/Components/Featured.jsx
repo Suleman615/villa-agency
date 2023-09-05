@@ -1,9 +1,9 @@
 import {useState} from "react";
-import featureIcon from '../assets/featured-icon.png'
-import infoIcon1 from '../assets/info-icon-01.png'
-import infoIcon2 from '../assets/info-icon-02.png'
-import infoIcon3 from '../assets/info-icon-03.png'
-import infoIcon4 from '../assets/info-icon-04.png'
+import featureIcon from '../assets/icons/featured-icon.png'
+import infoIcon1 from '../assets/icons/info-icon-01.png'
+import infoIcon2 from '../assets/icons/info-icon-02.png'
+import infoIcon3 from '../assets/icons/info-icon-03.png'
+import infoIcon4 from '../assets/icons/info-icon-04.png'
 
 
 const Featured=()=>{

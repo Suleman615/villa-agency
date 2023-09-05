@@ -1,6 +1,9 @@
 import PropertyCard from "./PropertyCard.jsx";
+import {villas, apartments, penthouse} from "../assets/dummyData.js";
 
 const Properties=()=>{
+    const data= villas.slice(0,2).concat(penthouse.slice(0,2)).concat(apartments.slice(0,2))
+
     return(
         <>
         <div className='py-24'>
@@ -13,12 +16,11 @@ const Properties=()=>{
 
 </div>
             <div className='p-4 xl:px-28 h-auto flex pt-20 gap-4 flex-wrap  justify-around'>
-<PropertyCard/>
-                <PropertyCard/>
-                <PropertyCard/>
-                <PropertyCard/>
-                <PropertyCard/>
-                <PropertyCard/>
+                {
+                    data.map((p)=>(
+                        <PropertyCard property={p}/>
+                    ))
+                }
 
             </div>
 
