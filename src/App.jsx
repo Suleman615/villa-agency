@@ -8,6 +8,7 @@ import Video from "./Components/Video.jsx";
 import Ideal from "./Components/Ideal.jsx";
 import Properties from "./Components/Properties.jsx";
 import Contact from "./Components/Contact.jsx";
+import Footer from "./Components/Footer.jsx";
 
 function App() {
 

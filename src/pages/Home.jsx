@@ -5,6 +5,7 @@ import Slider from "../Components/Slider.jsx";
 import Ideal from "../Components/Ideal.jsx";
 import Properties from "../Components/Properties.jsx";
 import Contact from "../Components/Contact.jsx";
+import Footer from "../Components/Footer.jsx";
 
 
 const Home = ()=>{
@@ -17,6 +18,7 @@ const Home = ()=>{
             <Ideal/>
             <Properties/>
             <Contact/>
+            <Footer/>
 
             
         </>
