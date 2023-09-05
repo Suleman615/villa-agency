@@ -4,6 +4,7 @@ import Video from "../Components/Video.jsx";
 import Slider from "../Components/Slider.jsx";
 import Ideal from "../Components/Ideal.jsx";
 import Properties from "../Components/Properties.jsx";
+import Contact from "../Components/Contact.jsx";
 
 
 const Home = ()=>{
@@ -15,6 +16,7 @@ const Home = ()=>{
             <Video/>
             <Ideal/>
             <Properties/>
+            <Contact/>
 
             
         </>
