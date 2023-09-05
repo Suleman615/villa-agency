@@ -46,13 +46,13 @@ const Navbar=()=>{
             </div>}
 
 
-            <div className="h-24 border-b-[1px]  border-gray-300 flex justify-between items-center ps-2 lg:ps-28 pe-2 bg-white text-black lg:pe-32 sticky top-0 z-20">
+            <div className="h-24 border-b-[1px]  border-gray-300 flex justify-between items-center ps-2 lg:ps-10 xl:ps-28 pe-2 bg-white text-black xl:pe-32 lg:pe-10 sticky top-0 z-20">
                 <div className="flex justify-between w-full md:w-auto "><h1 className="text-3xl me-0 md:me-8 font-bold ms-2 text-black">VILLA</h1><span onClick={gotoMobilenav} className=" font-bold me-2 inline md:hidden"><i
                     className="fa fa-bars fa-lg"></i></span>
                 </div>
 
                 {/************for desktop view*********/}
-                <div className="hidden md:flex  md:gap-12 lg:gap-16 font-semibold items-center" >
+                <div className="hidden md:flex  md:gap-6 lg:gap-16 font-semibold items-center" >
                     <p className="hover:text-orange-600 cursor-pointer">Home</p>
                     <p className="hover:text-orange-600 cursor-pointer">Properties</p>
                     <p className="hover:text-orange-600 cursor-pointer">Property Details</p>

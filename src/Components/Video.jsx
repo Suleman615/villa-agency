@@ -3,7 +3,7 @@ import 'font-awesome/css/font-awesome.css';
 const Video=()=>{
     return(
         <>
-            <img className="absolute h-[650px]   md:h-[650px]    blur-[3px] w-full object-cover -z-10 " src="https://mdbcdn.b-cdn.net/img/new/slides/006.webp" alt=""/>
+            <img className="absolute h-[680px]   md:h-[650px]    blur-[3px] w-full object-cover -z-10 " src="https://mdbcdn.b-cdn.net/img/new/slides/006.webp" alt=""/>
 
             <div className='pb-28'>
 
