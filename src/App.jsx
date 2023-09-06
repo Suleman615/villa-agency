@@ -14,6 +14,7 @@ import PropertiesHeading from "./Components/TopHeading.jsx";
 import AllProperties from "./Components/AllProperties.jsx";
 import PropertyDetails from "./pages/PropertyDetails.jsx";
 import SingleProperty from "./Components/SingleProperty.jsx";
+import ContactUsPage from "./pages/ContactUsPage.jsx";
 
 function App() {
 
@@ -21,7 +22,7 @@ function App() {
     <>
 
 
-     <PropertyDetails/>
+     <ContactUsPage/>
 
     </>
   )
