@@ -1,4 +1,4 @@
-import image from '../assets/d.jpg'
+import {Link} from "react-router-dom";
 const PropertyCard=({property})=>{
     return(
         <>
@@ -21,7 +21,7 @@ const PropertyCard=({property})=>{
                 <p>Parking: <span className='font-bold'>{property.parking}</span></p>
             </div>
 <div className='flex justify-center'>
-            <a className='bg-black w-fit hover:bg-orange-600  px-8 py-2 cursor-pointer rounded-3xl text-white text-md font-semibold ' >Schedule a visit</a>
+            <Link to='/details' className='bg-black w-fit hover:bg-orange-600  px-8 py-2 cursor-pointer rounded-3xl text-white text-md font-semibold ' >Schedule a visit</Link>
 </div>
         </div>
         </>

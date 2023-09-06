@@ -6,7 +6,7 @@ import TopHeading from "../Components/TopHeading.jsx";
 const PropertiesPage = () => {
     return(
         <>
-            <Navbar/>
+            <Navbar page='properties'/>
             <TopHeading target='PROPERTIES'/>
             <AllProperties/>
             <Footer/>

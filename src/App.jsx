@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import './App.css'
 import Navbar from "./Components/Navbar.jsx";
@@ -16,14 +17,20 @@ import PropertyDetails from "./pages/PropertyDetails.jsx";
 import SingleProperty from "./Components/SingleProperty.jsx";
 import ContactUsPage from "./pages/ContactUsPage.jsx";
 
+
 function App() {
 
   return (
     <>
-
-
-     <ContactUsPage/>
-
+        <Router>
+            <Routes>
+                <Route path="/"  element={<Home />}/>
+                <Route path="/home"  element={<Home />}/>
+                <Route path="/properties"  element={<PropertiesPage />}/>
+                <Route path="/details"  element={<PropertyDetails />}/>
+                <Route path="/contact"  element={<ContactUsPage/>}/>
+            </Routes>
+        </Router>
     </>
   )
 }

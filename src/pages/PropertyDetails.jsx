@@ -7,7 +7,7 @@ import Footer from "../Components/Footer.jsx";
 const PropertyDetails=()=>{
     return(
         <>
-            <Navbar/>
+            <Navbar page='details'/>
             <TopHeading target='SINGLE PROPERTY'/>
             <SingleProperty/>
             <Ideal/>

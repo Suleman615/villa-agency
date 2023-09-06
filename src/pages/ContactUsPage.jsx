@@ -3,10 +3,10 @@ import TopHeading from "../Components/TopHeading.jsx";
 import ContactUs from "../Components/ContactUs.jsx";
 import Footer from "../Components/Footer.jsx";
 
-const ContactUsPage=()=>{
+const ContactUsPage=({})=>{
     return(
         <>
-            <Navbar/>
+            <Navbar page='contact'/>
             <TopHeading target='CONTACT US'/>
             <ContactUs/>
             <Footer/>

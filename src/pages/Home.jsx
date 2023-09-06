@@ -11,7 +11,7 @@ import Footer from "../Components/Footer.jsx";
 const Home = ()=>{
     return(
         <>
-        <Navbar/>
+            <Navbar page='home'/>
             <Slider/>
             <Featured/>
             <Video/>

@@ -1,4 +1,5 @@
 import {useState} from "react";
+import {Link} from "react-router-dom";
 import image1 from '../assets/c.jpg'
 import image2 from '../assets/d.jpg'
 import image3 from '../assets/b.jpg'
@@ -49,17 +50,20 @@ const Details=({content})=>{
                 <p className='text-gray-600 mt-6 leading-loose'>{content.detailText1}</p>
 
                 <p className='text-gray-600 mt-6 leading-loose'>{content.detailText2}</p>
-                <a  className=" h-12 w-fit pr-6 mt-6 bg-black rounded-full flex items-center cursor-pointer ">
+                <Link to='/contact'  className=" h-12 w-fit pr-6 mt-6 bg-black rounded-full flex items-center cursor-pointer ">
                     <span className="w-12 h-full bg-orange-600 rounded-full flex items-center justify-center"><i className="fa fa-calendar text-white text-[15px] "></i></span>
                     <p className="text-white hover:text-orange-600 ms-4 ">Schedule a visit</p>
 
-                </a>
+                </Link>
             </div>
 
         </div>
         </>
     )
 }
+
+
+
 
 const Ideal=()=>{
     const [apartment , setApartment]=useState(true)
