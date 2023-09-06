@@ -58,11 +58,11 @@ const Navbar=({page})=>{
 
             </div>
             {/**************for mobile view***********/}
-            {showMobilenav && <div className="   gap-0 font-bold   w-[95%] mx-3 bg-white flex flex-col items-center h-fit rounded-b-3xl   md:hidden  sticky top-20 z-20 ">
-                <p className="border-b  w-[96%] text-center py-3">Home</p>
-                <p className="border-b w-[96%]  text-center py-3">Properties</p>
-                <p className=" border-b w-[96%] text-center py-3">Property Details</p>
-                <p className=" w-[96%] text-center py-3 rounded-b-3xl">Contact Us</p>
+            {showMobilenav && <div className="   gap-0 font-bold   w-[95%] mx-3 bg-white flex flex-col items-center h-fit rounded-b-3xl   md:hidden  fixed top-20 z-20 ">
+                <Link to='/home' className="border-b  w-[96%] text-center py-3">Home</Link>
+                <Link to='/properties' className="border-b w-[96%]  text-center py-3">Properties</Link>
+                <Link to='/details' className=" border-b w-[96%] text-center py-3">Property Details</Link>
+                <Link to='/contact' className=" w-[96%] text-center py-3 rounded-b-3xl">Contact Us</Link>
             </div>}
         </>
     )

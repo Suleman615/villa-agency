@@ -18,7 +18,7 @@ const Properties=()=>{
             <div className='p-4 xl:px-28 h-auto flex pt-20 gap-4 flex-wrap  justify-around'>
                 {
                     data.map((p)=>(
-                        <PropertyCard property={p}/>
+                        <PropertyCard key={p.id} property={p}/>
                     ))
                 }
 

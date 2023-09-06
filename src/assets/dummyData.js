@@ -96,7 +96,7 @@ export const villas=[
 
 export const apartments=[
     {
-        id:0,
+        id:10,
         area: '150',
         floor : 3,
         rooms: 9,
@@ -108,7 +108,7 @@ export const apartments=[
         address:'22 Hope Street Portland, OR 16540'
        },
     {
-        id:1,
+        id:11,
         area: '302',
         floor : 5,
         rooms: 11,
@@ -120,7 +120,7 @@ export const apartments=[
         address:'26 Mid Street Portland, OR 38540'
     },
     {
-        id:2,
+        id:12,
         area: '302',
         flat: '120',
         floor : 3,
@@ -134,7 +134,7 @@ export const apartments=[
 
     },
     {
-        id:3,
+        id:13,
         area: '185',
         floor : 4,
         rooms: 7,
@@ -146,7 +146,7 @@ export const apartments=[
         address:'18 Old Street Miami, OR 97219',
        },
     {
-        id:4,
+        id:14,
         area: '195',
         floor :6,
         rooms: 8,
@@ -158,7 +158,7 @@ export const apartments=[
         address:'26 Old Street Miami, OR 12870',
            },
     {
-        id:5,
+        id:15,
         area: '205',
         floor : 8,
         rooms: 12,
@@ -174,7 +174,7 @@ export const apartments=[
 
 export const penthouse=[
     {
-        id:0,
+        id:20,
         area: '250',
         floor : 3,
         rooms: 9,
@@ -186,7 +186,7 @@ export const penthouse=[
         address:'34 Hope Street Portland, OR 42680'
     },
     {
-        id:1,
+        id:21,
         area: '702',
         floor : 5,
         rooms: 4,
@@ -198,7 +198,7 @@ export const penthouse=[
         address:'14 Mid Street Miami, OR 36450'
     },
     {
-        id:2,
+        id:22,
         flat: '120',
         floor : 3,
         rooms: 5,
@@ -211,7 +211,7 @@ export const penthouse=[
 
     },
     {
-        id:3,
+        id:23,
         area: '185',
         floor : 4,
         rooms: 7,
@@ -223,7 +223,7 @@ export const penthouse=[
         address:'18 Old Street Miami, OR 97219'
     },
     {
-        id:4,
+        id:24,
         area: '395',
         floor :6,
         rooms: 8,
@@ -235,7 +235,7 @@ export const penthouse=[
         address:'22 Hope Street Portland, OR 16540'
     },
     {
-        id:5,
+        id:25,
         area: '205',
         floor : 8,
         rooms: 12,

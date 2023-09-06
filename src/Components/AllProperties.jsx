@@ -22,11 +22,11 @@ const AllProperties = () => {
             <button onClick={()=>{setShowall(false),setApartment(false),setVillaHouse(false),setPenthouses(true), setCurrent(penthouse)}} className={`${(penthouses)?'bg-orange-600':'bg-black hover:text-orange-600 bg-opacity-[85%]'} text-white font-semibold px-6 py-3 rounded`}>Penthouse</button>
 
         </div>
-            <div className='flex flex-wrap px-4 mb-12 justify-center gap-12'>
+            <div className='flex flex-wrap px-4 md:px-0 xl:px-4 mb-12 justify-center gap-12'>
 
                 {
                     current.map((p)=>(
-                       <PropertyCard property={p}/>
+                       <PropertyCard key={p.id} property={p}/>
                     ))
                 }
             </div>

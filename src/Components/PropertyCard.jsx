@@ -2,7 +2,7 @@ import {Link} from "react-router-dom";
 const PropertyCard=({property})=>{
     return(
         <>
-        <div  className='min-w-[250px]  lg:min-w-[200px] max-w-[350px]   bg-gray-100 p-6 rounded-xl mt-4'>
+        <div  className='min-w-[250px]  lg:min-w-[200px] max-w-[300px]  bg-gray-100 p-6 rounded-xl mt-4'>
             <img className='rounded-xl ' src={property.image} alt=""/>
             <span className='flex justify-between mt-6' >
                 <p className='w-fit bg-orange-600 bg-opacity-30 px-3 py-1 rounded'>{property.category}</p>
