@@ -1,4 +1,5 @@
 import {useState} from "react";
+import featured from'../assets/images/featured.jpg'
 import featureIcon from '../assets/icons/featured-icon.png'
 import infoIcon1 from '../assets/icons/info-icon-01.png'
 import infoIcon2 from '../assets/icons/info-icon-02.png'
@@ -22,7 +23,7 @@ const Featured=()=>{
             {/*********left section************/}
 
             <div className="col-span-12  md:col-span-4 h-fit  px-0 md:px-8 h-76 relative">
-                <img className='h-[450px] w-[90vw]  object-cover ' src='https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/content-gallery-3.png' alt="ab"/>
+                <img className='h-[450px] w-[90vw]  object-cover ' src={featured} alt="ab"/>
                 <div className='bg-orange-600 h-fit absolute -left-3 -bottom-10 rounded-full p-3  md:p-4 cursor-pointer  '>
                 <img className='h-[60px] md:h-[70px]'  src={featureIcon} alt=""/>
                 </div>
