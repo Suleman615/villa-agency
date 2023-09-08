@@ -1,9 +1,10 @@
 import mailIcon from '../assets/icons/email-icon.png'
 import phoneIcon from '../assets/icons/phone-icon.png'
+import background from '../assets/images/locationBackground.jpg'
 const Contact = () => {
   return(
       <>
-          <img className="absolute h-[650px]   md:h-[600px]    blur-[3px] w-full object-cover -z-10 " src="https://mdbcdn.b-cdn.net/img/new/slides/006.webp" alt=""/>
+          <img className="absolute h-[650px]   md:h-[600px]    blur-[3px] w-full object-cover -z-10 " src={background} alt=""/>
           <div className='pb-28'>
 
               <div className="  flex  flex-col  items-center">

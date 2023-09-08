@@ -49,7 +49,7 @@ const [firstImage , setFirstImage]=useState(true)
                 <div className="w-screen-lg h-[100vh]  mx-auto relative">
                     {firstImage && <div className='absolute  h-full w-full '>
                          <img className='h-full w-full object-cover absolute -z-10' src={image1} alt=""/>
-<div className='px-16  md:px-28 mt-40   mx-auto  w-fit   '>
+<div className='px-16  md:px-28 mt-40   mx-auto lg:mx-40  w-fit   '>
     <p className='bg-white w-fit px-4 py-1 text-lg font-semibold'>Sukkur, <span className='text-orange-600'>Pakistan</span></p>
     <h1 className='text-white font-bold text-4xl sm:text-6xl  mt-10'>HURRY!</h1>
     <h1 className='text-white font-bold text-4xl sm:text-6xl  w-auto md:w-96 leading-snug'> GET THE BEST VILLA FOR YOU</h1>
@@ -58,7 +58,7 @@ const [firstImage , setFirstImage]=useState(true)
                     { secondImage && <div className='absolute  h-full w-full '>
 
                             <img className='h-full w-full object-cover absolute -z-10' src={image2} alt=""/>
-                        <div className='px-16 md:px-28 w-fit mx-auto mt-40  '>
+                        <div className='px-16 md:px-28 w-fit mx-auto mt-40 lg:mx-40 '>
                             <p className='bg-white w-max px-4 py-1 text-lg font-semibold'>Islamabad, <span className='text-orange-600'>Pakistan</span></p>
                             <h1 className='text-white font-bold text-4xl sm:text-6xl  mt-10'>BE QUICK!</h1>
                             <h1 className='text-white font-bold text-4xl sm:text-6xl   w-fit md:w-96 leading-snug'> GET THE BEST VILLA IN TOWN</h1>
@@ -66,7 +66,7 @@ const [firstImage , setFirstImage]=useState(true)
                     </div>}
                     {thirdImage && <div className='absolute  h-full w-full '>
                          <img className='h-full w-full object-cover absolute -z-10' src={image3} alt=""/>
-                        <div className='px-16 md:px-28 mx-auto mt-40   w-fit   '>
+                        <div className='px-16 md:px-28 mx-auto mt-40   w-fit lg:mx-40  '>
                             <p className='bg-white w-fit  px-4 py-1 text-lg font-semibold'>Quetta, <span className='text-orange-600'>Pakistan</span></p>
                             <h1 className='text-white font-bold text-4xl sm:text-6xl   mt-10'>ACT NOW!</h1>
                             <h1 className='text-white font-bold text-4xl sm:text-6xl   w-auto md:w-96 leading-snug'> GET THE HIGHEST LEVEL PENTHOUSE</h1>

@@ -1,9 +1,10 @@
 import 'font-awesome/css/font-awesome.css';
-
+import videoBackground from '../assets/images/videoBackground.jpg'
+import  video from '../assets/images/video.jpg'
 const Video=()=>{
     return(
         <>
-            <img className="absolute h-[680px]   md:h-[650px]    blur-[3px] w-full object-cover -z-10 " src="https://mdbcdn.b-cdn.net/img/new/slides/006.webp" alt=""/>
+            <img className="absolute h-[680px]   md:h-[650px]    blur-[3px] w-full object-cover -z-10 " src={videoBackground} alt=""/>
 
             <div className='pb-28'>
 
@@ -15,7 +16,7 @@ const Video=()=>{
             <h1 className="text-white text-5xl w-full font-bold text-center sm:w-96 mt-6">Get Closer View & Different Feeling</h1>
         </div>
 
-            <div className="h-[200px]  md:h-[300px] lg:h-[400px] w-[95%] md:w-[80%] bg-no-repeat bg-cover bg-[url('https://tecdn.b-cdn.net/img/new/standard/city/081.jpg')]  mx-auto mt-28  rounded-lg flex items-center justify-center  shadow-[0px_0px_20px_1px_rgba(0,0,0,0.25)]">
+            <div className="h-[200px]  md:h-[300px] lg:h-[400px] xl:h-[500px] w-[95%] md:w-[80%] bg-no-repeat bg-cover   mx-auto mt-28  rounded-lg flex items-center justify-center  shadow-[0px_0px_20px_1px_rgba(0,0,0,0.25)]" style={{ backgroundImage: `url(${video})` }}>
                 <a href="http://www.youtube.com" target="_blank" className="p-4 bg-opacity-70 bg-orange-400 rounded-full cursor-pointer">
                <span className="bg-white  h-12 w-12 flex justify-center items-center   rounded-full "> <i className="fa fa-play text-xl text-orange-600" ></i></span></a>
 
