@@ -1,23 +1,23 @@
-import villa1 from '../assets/images/villa1.jpg'
-import villa2 from '../assets/images/villa2.jpg'
-import villa3 from '../assets/images/villa3.jpg'
-import villa4 from '../assets/images/villa4.jpg'
-import villa5 from '../assets/images/villa5.jpg'
-import villa6 from '../assets/images/villa6.jpg'
-
-import apartment1 from '../assets/images/apartment1.jpg'
-import apartment2 from '../assets/images/apartment2.jpg'
-import apartment3 from '../assets/images/apartment3.jpg'
-import apartment4 from '../assets/images/apartment4.jpg'
-import apartment5 from '../assets/images/apartment5.jpg'
-import apartment6 from '../assets/images/apartment6.jpg'
-
-import penthouse1 from '../assets/images/penthuse1.jpg'
-import penthouse2 from '../assets/images/penthuse2.jpg'
-import penthouse3 from '../assets/images/penthuse3.jpg'
-import penthouse4 from '../assets/images/penthuse4.jpg'
-import penthouse5 from '../assets/images/penthuse5.jpg'
-import penthouse6 from '../assets/images/penthuse6.jpg'
+// import villa1 from '../assets/images/villa1.jpg'
+// import villa2 from '../assets/images/villa2.jpg'
+// import villa3 from '../assets/images/villa3.jpg'
+// import villa4 from '../assets/images/villa4.jpg'
+// import villa5 from '../assets/images/villa5.jpg'
+// import villa6 from '../assets/images/villa6.jpg'
+//
+// import apartment1 from '../assets/images/apartment1.jpg'
+// import apartment2 from '../assets/images/apartment2.jpg'
+// import apartment3 from '../assets/images/apartment3.jpg'
+// import apartment4 from '../assets/images/apartment4.jpg'
+// import apartment5 from '../assets/images/apartment5.jpg'
+// import apartment6 from '../assets/images/apartment6.jpg'
+//
+// import penthouse1 from '../assets/images/penthuse1.jpg'
+// import penthouse2 from '../assets/images/penthuse2.jpg'
+// import penthouse3 from '../assets/images/penthuse3.jpg'
+// import penthouse4 from '../assets/images/penthuse4.jpg'
+// import penthouse5 from '../assets/images/penthuse5.jpg'
+// import penthouse6 from '../assets/images/penthuse6.jpg'
 
 export const villas=[
     {
@@ -27,7 +27,7 @@ export const villas=[
         rooms: 7,
         bath:7,
         parking: '7 spots',
-        image: villa1,
+        image: '/assets/images/villa1.jpg',
         price:'2,264.000',
         category:'Luxury villa',
         address:'18 Old Street Miami, OR 97219'
@@ -39,7 +39,7 @@ export const villas=[
         rooms: 8,
         bath:8,
         parking: '6 spots',
-        image: villa2,
+        image: '/assets/images/villa2.jpg',
         price:'2,344.000',
         category:'Luxury Villa',
         address:'26 Old Street Miami, OR 12870'
@@ -51,7 +51,7 @@ export const villas=[
         rooms: 12,
         bath: 12,
         parking: '9 spots',
-        image: villa3,
+        image: '/assets/images/villa3.jpg',
         price:'2,264.000',
         category:'Luxury Villa',
         address:'12 Hope Street Portland, OR 12650'
@@ -63,7 +63,7 @@ export const villas=[
         rooms: 9,
         bath: 8,
         parking: '3 spots',
-        image: villa4,
+        image: '/assets/images/villa4.jpg',
         price:'1,223.000',
         category:'Luxury Villa',
         address:'22 Hope Street Portland, OR 16540'
@@ -75,7 +75,7 @@ export const villas=[
         rooms: 14,
         bath: 12,
         parking: '11 spots',
-        image: villa5,
+        image: '/assets/images/villa5.jpg',
         price:'4,543.000',
         category:'Luxury Villa',
         address:'26 Mid Street Portland, OR 38540'
@@ -87,7 +87,7 @@ export const villas=[
         rooms: 4,
         bath:4,
         parking: '1 spot',
-        image: villa6,
+        image: '/assets/images/villa6.jpg',
         price:'1,000.000',
         category:'Luxury Villa ',
         address:'54 New Street Florida, OR 27001'
@@ -102,7 +102,7 @@ export const apartments=[
         rooms: 9,
         bath: 8,
         parking: '3 cars',
-        image: apartment1,
+        image: '/assets/images/apartment1.jpg',
         price:'1,223.000',
         category:'apartment',
         address:'22 Hope Street Portland, OR 16540'
@@ -114,7 +114,7 @@ export const apartments=[
         rooms: 11,
         bath: 10,
         parking: '5 cars',
-        image: apartment2,
+        image: '/assets/images/apartment2.jpg',
         price:'4,543.000',
         category:'apartment',
         address:'26 Mid Street Portland, OR 38540'
@@ -127,7 +127,7 @@ export const apartments=[
         rooms: 5,
         bath:4,
         parking: '1 car',
-        image: apartment3,
+        image: '/assets/images/apartment3.jpg',
         price:'1,100.000',
         category:'apartment',
         address:'34 New Street Miami, OR 24650'
@@ -140,7 +140,7 @@ export const apartments=[
         rooms: 7,
         bath:7,
         parking: '4 cars',
-        image: apartment4,
+        image: '/assets/images/apartment4.jpg',
         price:'2,264.000',
         category:'Luxury villa',
         address:'18 Old Street Miami, OR 97219',
@@ -152,7 +152,7 @@ export const apartments=[
         rooms: 8,
         bath:8,
         parking: '6 cars',
-        image: apartment5,
+        image: '/assets/images/apartment5.jpg',
         price:'1,764.000',
         category:'apartment',
         address:'26 Old Street Miami, OR 12870',
@@ -164,7 +164,7 @@ export const apartments=[
         rooms: 12,
         bath: 12,
         parking: '9 cars',
-        image: apartment6,
+        image: '/assets/images/apartment6.jpg',
         price:'2,644.000',
         category:'Luxury Villa',
         address:'12 Hope Street Portland, OR 12650',
@@ -180,7 +180,7 @@ export const penthouse=[
         rooms: 9,
         bath: 8,
         parking: '3 cars',
-        image: penthouse1,
+        image:'/assets/images/penthouse1.jpg',
         price:'1,533.000',
         category:'penthouse',
         address:'34 Hope Street Portland, OR 42680'
@@ -192,7 +192,7 @@ export const penthouse=[
         rooms: 4,
         bath: 4,
         parking: '4 cars',
-        image: penthouse2,
+        image: '/assets/images/penthouse2.jpg',
         price:'4,343.000',
         category:'penthouse',
         address:'14 Mid Street Miami, OR 36450'
@@ -204,7 +204,7 @@ export const penthouse=[
         rooms: 5,
         bath:4,
         parking: '1 car',
-        image: penthouse3,
+        image: '/assets/images/penthouse3.jpg',
         price:'1,100.000',
         category:'penthouse',
         address:'14 Mid Street Miami, OR 36450'
@@ -217,7 +217,7 @@ export const penthouse=[
         rooms: 7,
         bath:7,
         parking: '4 cars',
-        image: penthouse4,
+        image: '/assets/images/penthouse4.jpg',
         price:'2,264.000',
         category:'penthouse',
         address:'18 Old Street Miami, OR 97219'
@@ -229,7 +229,7 @@ export const penthouse=[
         rooms: 8,
         bath:8,
         parking: '6 cars',
-        image: penthouse5,
+        image: '/assets/images/penthouse5.jpg',
         price:'1,764.000',
         category:'penthouse',
         address:'22 Hope Street Portland, OR 16540'
@@ -241,7 +241,7 @@ export const penthouse=[
         rooms: 12,
         bath: 12,
         parking: '9 cars',
-        image: penthouse6,
+        image: '/assets/images/penthouse6.jpg',
         price:'2,644.000',
         category:'penthouse',
         address:'12 Hope Street Portland, OR 12650'
