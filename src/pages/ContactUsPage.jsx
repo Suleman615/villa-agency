@@ -1,7 +1,7 @@
-import Navbar from "../Components/Navbar.jsx";
-import TopHeading from "../Components/TopHeading.jsx";
-import ContactUs from "../Components/ContactUs.jsx";
-import Footer from "../Components/Footer.jsx";
+import Navbar from "../components/Navbar.jsx";
+import TopHeading from "../components/TopHeading.jsx";
+import ContactUs from "../components/ContactUs.jsx";
+import Footer from "../components/Footer.jsx";
 
 const ContactUsPage=({})=>{
     return(

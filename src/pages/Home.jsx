@@ -1,11 +1,11 @@
-import Navbar from "../Components/Navbar.jsx";
-import Featured from "../Components/Featured.jsx";
-import Video from "../Components/Video.jsx";
-import Slider from "../Components/Slider.jsx";
-import Ideal from "../Components/Ideal.jsx";
-import Properties from "../Components/Properties.jsx";
-import Contact from "../Components/Contact.jsx";
-import Footer from "../Components/Footer.jsx";
+import Navbar from "../components/Navbar.jsx";
+import Featured from "../components/Featured.jsx";
+import Video from "../components/Video.jsx";
+import Slider from "../components/Slider.jsx";
+import Ideal from "../components/Ideal.jsx";
+import Properties from "../components/Properties.jsx";
+import Contact from "../components/Contact.jsx";
+import Footer from "../components/Footer.jsx";
 
 
 const Home = ()=>{
