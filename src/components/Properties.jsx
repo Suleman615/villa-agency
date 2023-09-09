@@ -1,7 +1,9 @@
 import PropertyCard from "./PropertyCard.jsx";
 import {villas, apartments, penthouse} from "./dummyData.jsx";
+import {useState} from "react";
 
 const Properties=()=>{
+
     const data= villas.slice(0,2).concat(penthouse.slice(0,2)).concat(apartments.slice(0,2))
 
     return(

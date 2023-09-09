@@ -1,5 +1,6 @@
 import {Link} from "react-router-dom";
 const PropertyCard=({property})=>{
+
     return(
         <>
         <div  className='min-w-[250px] h-auto lg:min-w-[200px] max-w-[300px]  bg-gray-100 p-6 rounded-xl mt-4'>

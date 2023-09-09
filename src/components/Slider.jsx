@@ -1,9 +1,7 @@
 import 'font-awesome/css/font-awesome.css';
 
 
-import image1 from '../assets/image.jpg'
-import  image2 from '../assets/d.jpg'
-import  image3 from '../assets/c.jpg'
+
 import {useEffect, useState} from "react";
 
 const Slider=()=>{
@@ -47,7 +45,7 @@ const [firstImage , setFirstImage]=useState(true)
             <div className="h-fit pb-9  ">
                 <div className="w-screen-lg h-[100vh]  mx-auto relative">
                     {firstImage && <div className='absolute  h-full w-full '>
-                         <img className='h-full w-full object-cover absolute -z-10' src={image1} alt=""/>
+                         <img className='h-full w-full object-cover absolute -z-10' src="./assets/images/slider1.jpg" alt=""/>
 <div className='px-16  md:px-28 mt-40   mx-auto lg:mx-40  w-fit   '>
     <p className='bg-white w-fit px-4 py-1 text-lg font-semibold'>Sukkur, <span className='text-orange-600'>Pakistan</span></p>
     <h1 className='text-white font-bold text-4xl sm:text-6xl  mt-10'>HURRY!</h1>
@@ -56,7 +54,7 @@ const [firstImage , setFirstImage]=useState(true)
                     </div>}
                     { secondImage && <div className='absolute  h-full w-full '>
 
-                            <img className='h-full w-full object-cover absolute -z-10' src={image2} alt=""/>
+                            <img className='h-full w-full object-cover absolute -z-10' src="./assets/images/slider2.jpg" alt=""/>
                         <div className='px-16 md:px-28 w-fit mx-auto mt-40 lg:mx-40 '>
                             <p className='bg-white w-max px-4 py-1 text-lg font-semibold'>Islamabad, <span className='text-orange-600'>Pakistan</span></p>
                             <h1 className='text-white font-bold text-4xl sm:text-6xl  mt-10'>BE QUICK!</h1>
@@ -64,7 +62,7 @@ const [firstImage , setFirstImage]=useState(true)
                         </div>
                     </div>}
                     {thirdImage && <div className='absolute  h-full w-full '>
-                         <img className='h-full w-full object-cover absolute -z-10' src={image3} alt=""/>
+                         <img className='h-full w-full object-cover absolute -z-10' src="./assets/images/slider3.jpg" alt=""/>
                         <div className='px-16 md:px-28 mx-auto mt-40   w-fit lg:mx-40  '>
                             <p className='bg-white w-fit  px-4 py-1 text-lg font-semibold'>Quetta, <span className='text-orange-600'>Pakistan</span></p>
                             <h1 className='text-white font-bold text-4xl sm:text-6xl   mt-10'>ACT NOW!</h1>

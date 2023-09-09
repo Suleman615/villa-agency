@@ -1,8 +1,6 @@
 import {useState} from "react";
 import {Link} from "react-router-dom";
-import image1 from '../assets/c.jpg'
-import image2 from '../assets/d.jpg'
-import image3 from '../assets/b.jpg'
+
 
 
 const Details=({content})=>{
@@ -78,7 +76,7 @@ const Ideal=()=>{
             rooms: 4,
             parking: "Yes",
             payment: 'Bank',
-            image: image1,
+            image: './assets/images/apartment2.jpg',
             detailHeading: 'Extra Info About Property',
             detailText1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut labore et dolore magna aliqua quised ipsum suspendisse.',
             detailText2: 'When you need free CSS templates, you can simply type TemplateMo in any search engine website. In addition, you can type TemplateMo Portfolio, TemplateMo One Page Layouts, etc.'
@@ -89,7 +87,7 @@ const Ideal=()=>{
             rooms: 5,
             parking: 'Yes',
             payment: 'Bank',
-            image: image2,
+            image: './assets/images/villa2.jpg',
             detailHeading: 'Detail Info About Villa',
             detailText1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut labore et dolore magna aliqua quised ipsum suspendisse.',
             detailText2: 'Swag fanny pack lyft blog twee. JOMO ethical copper mug, succulents typewriter shaman DIY kitsch twee taiyaki fixie hella venmo after messenger poutine next level humblebrag swag franzen.'
@@ -100,7 +98,7 @@ const Ideal=()=>{
             rooms: 6,
             parking: "Yes",
             payment: 'Bank',
-            image: image3,
+            image: './assets/images/penthouse2.jpg',
             detailHeading: 'Extra Info About Penthouse',
             detailText1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut labore et dolore magna aliqua quised ipsum suspendisse.',
             detailText2: 'Swag fanny pack lyft blog twee. JOMO ethical copper mug, succulents typewriter shaman DIY kitsch twee taiyaki fixie hella venmo after messenger poutine next level humblebrag swag franzen.'

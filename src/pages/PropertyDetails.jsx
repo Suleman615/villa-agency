@@ -4,7 +4,10 @@ import SingleProperty from "../components/SingleProperty.jsx";
 import Ideal from "../components/Ideal.jsx";
 import Footer from "../components/Footer.jsx";
 
+
 const PropertyDetails=()=>{
+
+
     return(
         <>
             <Navbar page='details'/>

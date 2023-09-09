@@ -1,4 +1,4 @@
-import image from '../assets/image.jpg'
+import image from '../assets/b.jpg'
 
 import {useState} from "react";
 const SingleProperty=()=>{
