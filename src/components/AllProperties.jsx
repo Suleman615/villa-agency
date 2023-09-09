@@ -1,6 +1,6 @@
 import 'font-awesome/css/font-awesome.css';
 import {useState} from "react";
-import {villas, apartments, penthouse} from "../assets/dummyData.js";
+import {villas, apartments, penthouse} from "../assets/dummyData.jsx";
 import PropertyCard from "./PropertyCard.jsx";
 
 const AllProperties = () => {

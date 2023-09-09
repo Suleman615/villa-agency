@@ -1,5 +1,5 @@
 import PropertyCard from "./PropertyCard.jsx";
-import {villas, apartments, penthouse} from "../assets/dummyData.js";
+import {villas, apartments, penthouse} from "../assets/dummyData.jsx";
 
 const Properties=()=>{
     const data= villas.slice(0,2).concat(penthouse.slice(0,2)).concat(apartments.slice(0,2))
