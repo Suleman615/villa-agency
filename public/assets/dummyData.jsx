@@ -12,12 +12,12 @@ import apartment4 from './images/apartment4.jpg'
 import apartment5 from './images/apartment5.jpg'
 import apartment6 from './images/apartment6.jpg'
 
-import penthouse1 from './images/penthuse1.jpg'
-import penthouse2 from './images/penthuse2.jpg'
-import penthouse3 from './images/penthuse3.jpg'
-import penthouse4 from './images/penthuse4.jpg'
-import penthouse5 from './images/penthuse5.jpg'
-import penthouse6 from './images/penthuse6.jpg'
+import penthouse1 from './images/penthouse1.jpg'
+import penthouse2 from './images/penthouse2.jpg'
+import penthouse3 from './images/penthouse3.jpg'
+import penthouse4 from './images/penthouse4.jpg'
+import penthouse5 from './images/penthouse5.jpg'
+import penthouse6 from './images/penthouse6.jpg'
 
 export const villas=[
     {

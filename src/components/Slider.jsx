@@ -4,7 +4,6 @@ import 'font-awesome/css/font-awesome.css';
 import image1 from '../assets/image.jpg'
 import  image2 from '../assets/d.jpg'
 import  image3 from '../assets/c.jpg'
-import  image4 from '../assets/b.jpg'
 import {useEffect, useState} from "react";
 
 const Slider=()=>{

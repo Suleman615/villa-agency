@@ -1,11 +1,4 @@
 import {useState} from "react";
-import featured from'../assets/images/featured.jpg'
-import featureIcon from '../assets/icons/featured-icon.png'
-import infoIcon1 from '../assets/icons/info-icon-01.png'
-import infoIcon2 from '../assets/icons/info-icon-02.png'
-import infoIcon3 from '../assets/icons/info-icon-03.png'
-import infoIcon4 from '../assets/icons/info-icon-04.png'
-
 
 const Featured=()=>{
     const [answer1 , setAnswer1]=useState(true)
@@ -23,9 +16,9 @@ const Featured=()=>{
             {/*********left section************/}
 
             <div className="col-span-12  md:col-span-4 h-fit  px-0 md:px-8 h-76 relative">
-                <img className='h-[450px] w-[90vw]  object-cover ' src={featured} alt="ab"/>
+                <img className='h-[450px] w-[90vw]  object-cover ' src="./assets/images/featured.jpg" alt="ab"/>
                 <div className='bg-orange-600 h-fit absolute -left-3 -bottom-10 rounded-full p-3  md:p-4 cursor-pointer  '>
-                <img className='h-[60px] md:h-[70px]'  src={featureIcon} alt=""/>
+                <img className='h-[60px] md:h-[70px]'  src="./assets/icons/featured-icon.png" alt=""/>
                 </div>
             </div>
 
@@ -57,28 +50,28 @@ const Featured=()=>{
             <div className="col-span-12 md:col-span-3 mt-10 md:mt-0 ">
                 <div className="    rounded-lg  shadow-[0px_0px_10px_1px_rgba(0,0,0,0.25)] px-6 ">
     <div className="flex flex-col sm:flex-row md:flex-col lg:flex-row py-8 text-center md:text-start  items-center gap-1 sm:gap-8  md:gap-1 lg:gap-8 border-b-[1px] border-gray-300">
-        <img src={infoIcon1} alt=""/>
+        <img src="./assets/icons/info-icon-01.png" alt=""/>
         <div>
 <h1 className="text-2xl font-semibold ">250 m<span className="">2</span></h1>
             <p className="text-gray-400 font-semibold mt-1">Total Flat Spaces</p>
         </div>
     </div>
                     <div className="flex flex-col sm:flex-row md:flex-col lg:flex-row py-8 items-center gap-1 sm:gap-8  md:gap-1 lg:gap-8 text-center md:text-start border-b-[1px] border-gray-300">
-                        <img src={infoIcon2} alt=""/>
+                        <img src="./assets/icons/info-icon-02.png" alt=""/>
                         <div>
                             <h1 className="text-2xl font-semibold ">Contract</h1>
                             <p className="text-gray-400 font-semibold mt-1">Contract Ready</p>
                         </div>
                     </div>
                     <div className="flex flex-col  sm:flex-row md:flex-col lg:flex-row py-8  items-center gap-1 sm:gap-8  md:gap-1 lg:gap-8 text-center md:text-start border-b-[1px] border-gray-300">
-                        <img src={infoIcon3} alt=""/>
+                        <img src="./assets/icons/info-icon-03.png" alt=""/>
                         <div >
                             <h1 className="text-2xl font-semibold ">Payment</h1>
                             <p className="text-gray-400 font-semibold mt-1">Payment Process</p>
                         </div>
                     </div>
                     <div className="flex flex-col sm:flex-row md:flex-col lg:flex-row gap-1 sm:gap-8  md:gap-1 lg:gap-8  text-center md:text-start py-8 items-center ">
-                        <img src={infoIcon4} alt=""/>
+                        <img src="./assets/icons/info-icon-04.png" alt=""/>
                         <div >
                             <h1 className="text-2xl font-semibold ">Safety</h1>
                             <p className="text-gray-400 font-semibold mt-1">24/7 Under Control</p>

@@ -1,8 +1,5 @@
 import image from '../assets/image.jpg'
-import infoIcon1 from "../assets/icons/info-icon-01.png";
-import infoIcon2 from "../assets/icons/info-icon-02.png";
-import infoIcon3 from "../assets/icons/info-icon-03.png";
-import infoIcon4 from "../assets/icons/info-icon-04.png";
+
 import {useState} from "react";
 const SingleProperty=()=>{
     const [answer1 , setAnswer1]=useState(true)
@@ -46,28 +43,28 @@ const SingleProperty=()=>{
             <div className=''>
                 <div className="  w-full  rounded-lg  shadow-[0px_0px_10px_1px_rgba(0,0,0,0.25)] px-9 ">
                     <div className="flex flex-row  md:flex-col lg:flex-row py-8 text-start sm:text-center md:text-center lg:text-start  items-center gap-8   md:gap-1 lg:gap-8 border-b-[1px] border-gray-300">
-                        <img src={infoIcon1} alt=""/>
+                        <img src="./assets/icons/info-icon-01.png" alt=""/>
                         <div>
                             <h1 className="text-2xl font-semibold ">250 m<span className="">2</span></h1>
                             <p className="text-gray-400 font-semibold mt-1">Total Flat Spaces</p>
                         </div>
                     </div>
                     <div className="flex flex-row  md:flex-col lg:flex-row py-8 text-start sm:text-center md:text-center lg:text-start  items-center gap-8   md:gap-1 lg:gap-8 border-b-[1px] border-gray-300">
-                        <img src={infoIcon2} alt=""/>
+                        <img src="./assets/icons/info-icon-02.png" alt=""/>
                         <div>
                             <h1 className="text-2xl font-semibold ">Contract</h1>
                             <p className="text-gray-400 font-semibold mt-1">Contract Ready</p>
                         </div>
                     </div>
                     <div className="flex flex-row  md:flex-col lg:flex-row py-8 text-start sm:text-center md:text-center lg:text-start  items-center gap-8   md:gap-1 lg:gap-8 border-b-[1px] border-gray-300">
-                        <img src={infoIcon3} alt=""/>
+                        <img src="./assets/icons/info-icon-03.png" alt=""/>
                         <div >
                             <h1 className="text-2xl font-semibold ">Payment</h1>
                             <p className="text-gray-400 font-semibold mt-1">Payment Process</p>
                         </div>
                     </div>
                     <div className="flex flex-row  md:flex-col lg:flex-row py-8 text-start sm:text-center md:text-center lg:text-start  items-center gap-8   md:gap-1 lg:gap-8 border-b-[1px] border-gray-300">
-                        <img src={infoIcon4} alt=""/>
+                        <img src="./assets/icons/info-icon-04.png" alt=""/>
                         <div >
                             <h1 className="text-2xl font-semibold ">Safety</h1>
                             <p className="text-gray-400 font-semibold mt-1">24/7 Under Control</p>

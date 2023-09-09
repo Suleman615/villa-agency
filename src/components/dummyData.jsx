@@ -12,12 +12,7 @@
 // import apartment5 from '../assets/images/apartment5.jpg'
 // import apartment6 from '../assets/images/apartment6.jpg'
 //
-// import penthouse1 from '../assets/images/penthuse1.jpg'
-// import penthouse2 from '../assets/images/penthuse2.jpg'
-// import penthouse3 from '../assets/images/penthuse3.jpg'
-// import penthouse4 from '../assets/images/penthuse4.jpg'
-// import penthouse5 from '../assets/images/penthuse5.jpg'
-// import penthouse6 from '../assets/images/penthuse6.jpg'
+
 
 export const villas=[
     {
@@ -102,7 +97,7 @@ export const apartments=[
         rooms: 9,
         bath: 8,
         parking: '3 cars',
-        image: '/assets/images/apartment1.jpg',
+        image: './assets/images/apartment1.jpg',
         price:'1,223.000',
         category:'apartment',
         address:'22 Hope Street Portland, OR 16540'
@@ -114,7 +109,7 @@ export const apartments=[
         rooms: 11,
         bath: 10,
         parking: '5 cars',
-        image: '/assets/images/apartment2.jpg',
+        image: './assets/images/apartment2.jpg',
         price:'4,543.000',
         category:'apartment',
         address:'26 Mid Street Portland, OR 38540'
@@ -180,7 +175,7 @@ export const penthouse=[
         rooms: 9,
         bath: 8,
         parking: '3 cars',
-        image:'/assets/images/penthouse1.jpg',
+        image: '/assets/images/penthouse1.jpg',
         price:'1,533.000',
         category:'penthouse',
         address:'34 Hope Street Portland, OR 42680'
