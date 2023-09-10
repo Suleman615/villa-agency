@@ -22,7 +22,7 @@ const PropertyCard=({property})=>{
                 <p>Parking: <span className='font-bold'>{property.parking}</span></p>
             </div>
 <div className='flex justify-center'>
-            <Link to='/details' className='bg-black w-fit hover:bg-orange-600  px-8 py-2 cursor-pointer rounded-3xl text-white text-md font-semibold ' >Schedule a visit</Link>
+            <Link to={`/details/${property.id}`} className='bg-black w-fit hover:bg-orange-600  px-8 py-2 cursor-pointer rounded-3xl text-white text-md font-semibold ' >Schedule a visit</Link>
 </div>
         </div>
         </>

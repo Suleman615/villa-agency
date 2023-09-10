@@ -47,7 +47,7 @@ const Navbar=({page})=>{
                 <div className="hidden md:flex  md:gap-6 lg:gap-16 font-semibold items-center" >
                     <Link  to='/home' className={`hover:text-orange-600 ${(page==='home')?'text-orange-600':'text-black'}  cursor-pointer`}>Home</Link>
                     <Link  to='/properties' className={`hover:text-orange-600 ${(page==='properties')?'text-orange-600':'text-black'}  cursor-pointer`}>Properties</Link>
-                    <Link  to='/details' className={`hover:text-orange-600 ${(page==='details')?'text-orange-600':'text-black'}  cursor-pointer`}>Property Details</Link>
+                    <Link  to={`/details/${0}`} className={`hover:text-orange-600 ${(page==='details')?'text-orange-600':'text-black'}  cursor-pointer`}>Property Details</Link>
                     <Link  to='/contact' className={`hover:text-orange-600 ${(page==='contact')?'text-orange-600':'text-black'}  cursor-pointer`}>Contact Us</Link>
                     <Link to='/contact'  className="w-48 h-10 bg-black rounded-3xl flex items-center cursor-pointer bg-opacity-80">
                         <span className="w-10 h-full bg-orange-600 rounded-full flex items-center justify-center"><i className="fa fa-calendar text-white text-[15px] "></i></span>
@@ -58,10 +58,10 @@ const Navbar=({page})=>{
 
             </div>
             {/**************for mobile view***********/}
-            {showMobilenav && <div className="   gap-0 font-bold   w-[95%] mx-3 bg-white flex flex-col items-center h-fit rounded-b-3xl   md:hidden  fixed top-20 z-20 ">
+            {showMobilenav && <div className="navanimation   gap-0 font-bold   w-[95%] mx-2 overflow-hidden  bg-white flex flex-col items-center  rounded-b-xl   md:hidden  fixed top-20 z-20 " >
                 <Link to='/home' className="border-b  w-[96%] text-center py-3">Home</Link>
                 <Link to='/properties' className="border-b w-[96%]  text-center py-3">Properties</Link>
-                <Link to='/details' className=" border-b w-[96%] text-center py-3">Property Details</Link>
+                <Link to={`/details/${0}`} className=" border-b w-[96%] text-center py-3">Property Details</Link>
                 <Link to='/contact' className=" w-[96%] text-center py-3 rounded-b-3xl">Contact Us</Link>
             </div>}
         </>

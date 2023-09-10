@@ -1,6 +1,5 @@
 import PropertyCard from "./PropertyCard.jsx";
 import {villas, apartments, penthouse} from "./dummyData.jsx";
-import {useState} from "react";
 
 const Properties=()=>{
 

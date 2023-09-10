@@ -97,7 +97,7 @@ export const apartments=[
         rooms: 9,
         bath: 8,
         parking: '3 cars',
-        image: './assets/images/apartment1.jpg',
+        image: '/assets/images/apartment1.jpg',
         price:'1,223.000',
         category:'apartment',
         address:'22 Hope Street Portland, OR 16540'
@@ -109,7 +109,7 @@ export const apartments=[
         rooms: 11,
         bath: 10,
         parking: '5 cars',
-        image: './assets/images/apartment2.jpg',
+        image: '/assets/images/apartment2.jpg',
         price:'4,543.000',
         category:'apartment',
         address:'26 Mid Street Portland, OR 38540'

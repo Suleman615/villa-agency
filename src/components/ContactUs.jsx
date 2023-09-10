@@ -16,14 +16,14 @@ const ContactUs=()=>{
 
                     <div className='mt-20 gap-12 h-fit w-fit  mb-10 md:mb-36 flex flex-col   justify-center  items-center md:justify-between '>
                         <div className=' px-4  md:px-6   py-8 pr-0 md:pr-24  shadow-[0px_0px_10px_1px_rgba(0,0,0,0.25)] w-full lg:w-fit flex flex-row lg:flex-col xl:flex-row gap-6 rounded-lg items-center'>
-                            <img className='object-contain' src="./assets/icons/phone-icon.png" alt=""/>
+                            <img className='object-contain' src="/assets/icons/phone-icon.png" alt=""/>
                             <span>
                                 <p className='text-black font-bold text-2xl'>010-020-0340</p>
                                 <p className='text-gray-500 font-semibold'>Phone Number</p>
                             </span>
                         </div>
                         <div className=' px-6  py-8 pr-24   shadow-[0px_0px_10px_1px_rgba(0,0,0,0.25)] w-full lg:w-fit flex gap-6 flex-row lg:flex-col xl:flex-row items-center rounded-lg'>
-                            <img className='object-contain h-[52px]'  src="./assets/icons/email-icon.png" alt=""/>
+                            <img className='object-contain h-[52px]'  src="/assets/icons/email-icon.png" alt=""/>
                             <span>
                                 <p className='text-black font-bold text-2xl'>info@villa.co</p>
                                 <p className='text-gray-500 font-semibold'>Business Email</p>
