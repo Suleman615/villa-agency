@@ -15,7 +15,7 @@ const Video=()=>{
             <h1 className="text-white text-5xl w-full font-bold text-center sm:w-96 mt-6">Get Closer View & Different Feeling</h1>
         </div>
 
-            <div className="h-[200px]  md:h-[300px] lg:h-[400px] xl:h-[500px] w-[95%] md:w-[80%] bg-no-repeat bg-cover   mx-auto mt-28  rounded-lg flex items-center justify-center bg-[url('./assets/images/video.jpg')]  shadow-[0px_0px_20px_1px_rgba(0,0,0,0.25)]" >
+            <div className="h-[200px]  md:h-[300px] lg:h-[400px] xl:h-[500px] w-[95%] md:w-[80%] bg-no-repeat bg-cover   mx-auto mt-28  rounded-lg flex items-center justify-center bg-[url('/assets/images/video.jpg')]  shadow-[0px_0px_20px_1px_rgba(0,0,0,0.25)]" >
                 <a href="https://www.youtube.com" target="_blank" className="p-4 bg-opacity-70 bg-orange-400 rounded-full cursor-pointer">
                <span className="bg-white  h-12 w-12 flex justify-center items-center   rounded-full "> <i className="fa fa-play text-xl text-orange-600" ></i></span></a>
 
