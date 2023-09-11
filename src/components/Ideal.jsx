@@ -8,6 +8,7 @@ const Details=({content})=>{
         <>
         <div className='grid grid-cols-12 mt-20'>
 
+
             {/*********Left Section**********/}
             <div className='col-span-12 lg:col-span-3 px-6 md:p-0 md:pr-6 h-fit '>
 <div className='shadow-[0px_0px_10px_1px_rgba(0,0,0,0.25)] rounded'>
@@ -116,6 +117,8 @@ const Ideal=()=>{
     <hr className="border-0 w-4 h-[3px] bg-red-400 rotate-90  mt-4 -ms-24 md:-ms-1  "/>
     <p className="font-bold text-red-400 ps-2 ms-2  -mt-4 py-0 text-[19px] border-red-600">BEST DEAL</p>
 </div>
+
+            {/********** Buttons ********/}
 
             <div className='flex flex-col md:flex-row justify-between ' >
                 <h1 className='text-4xl leading-snug font-bold w-full   md:w-[300px] text-center md:text-start  mt-4'>Find Your Best Deal Right Now!</h1>

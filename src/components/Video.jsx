@@ -20,7 +20,7 @@ const Video=()=>{
                <span className="bg-white  h-12 w-12 flex justify-center items-center   rounded-full "> <i className="fa fa-play text-xl text-orange-600" ></i></span></a>
 
             </div>
-
+                {/********** Features  *********/}
                 <div className='mt-36 mx-28 lg:justify-center xl:mx-28 flex flex-col lg:flex-row items-center gap-14 lg:gap-18 '>
                     <div className=" w-fit flex items-center gap-6  bg-orange-100 rounded-md px-12 py-6 bg-opacity-60 relative">
                         <span className='w-12 h-12 absolute -top-5 -right-5 rounded-full bg-orange-600'></span>

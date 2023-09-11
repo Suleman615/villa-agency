@@ -43,7 +43,11 @@ const [firstImage , setFirstImage]=useState(true)
         <>
 
             <div className="h-fit pb-9  ">
+
+                {/********** Slider Images ***********/}
                 <div className="w-screen-lg h-[100vh]  mx-auto relative">
+
+                    {/********** First Image ***********/}
                     {firstImage && <div className='absolute  h-full w-full '>
                          <img className='h-full w-full object-cover absolute -z-10' src="/assets/images/slider1.jpg" alt=""/>
 <div className='px-16  md:px-28 mt-40   mx-auto lg:mx-40  w-fit   '>
@@ -52,6 +56,8 @@ const [firstImage , setFirstImage]=useState(true)
     <h1 className='text-white font-bold text-4xl sm:text-6xl  w-auto md:w-96 leading-snug'> GET THE BEST VILLA FOR YOU</h1>
 </div>
                     </div>}
+
+                    {/********** Second Image ***********/}
                     { secondImage && <div className='absolute  h-full w-full '>
 
                             <img className='h-full w-full object-cover absolute -z-10' src="/assets/images/slider2.jpg" alt=""/>
@@ -61,6 +67,8 @@ const [firstImage , setFirstImage]=useState(true)
                             <h1 className='text-white font-bold text-4xl sm:text-6xl   w-fit md:w-96 leading-snug'> GET THE BEST VILLA IN TOWN</h1>
                         </div>
                     </div>}
+
+                    {/********** Third Image ***********/}
                     {thirdImage && <div className='absolute  h-full w-full '>
                          <img className='h-full w-full object-cover absolute -z-10' src="/assets/images/slider3.jpg" alt=""/>
                         <div className='px-16 md:px-28 mx-auto mt-40   w-fit lg:mx-40  '>
@@ -82,6 +90,8 @@ const [firstImage , setFirstImage]=useState(true)
                     <div onClick={()=>{setFirstImage(false);setSecondImage(false);setThirdImage(true)}} className={`h-4 w-4  rounded-full cursor-pointer ${(thirdImage)?'bg-orange-600':'bg-gray-200 bg-opacity-50'}`}></div>
                 </div></div>
 
+
+                    {/******** Buttons *********/}
                     <div onClick={gotoPrevious} className='h-12 w-12  bg-gray-500 bg-opacity-40 rounded-full top-[80%] cursor-pointer left-2  md:left-10 absolute flex justify-center items-center hover:bg-opacity-70 '><i className="fa fa-angle-up text-3xl text-center -ms-2 font-bold text-gray-50 -rotate-90"></i> </div>
                 <div onClick={gotoNext} className='h-12 w-12  bg-gray-500 bg-opacity-40 rounded-full top-[80%] cursor-pointer right-2 md:right-10 absolute flex justify-center items-center hover:bg-opacity-70'><i className="fa fa-angle-up text-3xl text-center ms-2 font-bold text-gray-50 rotate-90"></i> </div>
 

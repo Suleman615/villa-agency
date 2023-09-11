@@ -3,6 +3,8 @@ const ContactUs=()=>{
     return(
         <>
             <div className='flex  md:mx-4 flex-col md:flex-row gap-12 justify-center mt-28'>
+
+                {/********* Top Headings *********/}
                 <div className='flex  flex-col w-full px-4 md:w-[600px] items-start'>
 
                     <div>
@@ -14,6 +16,8 @@ const ContactUs=()=>{
                         <p className='leading-loose mt-6 w-full'>When you really need to download free CSS templates, please remember our website TemplateMo. Also, tell your friends about our website. Thank you for visiting. There is a variety of Bootstrap HTML CSS templates on our website. If you need more information, please contact us.</p>
                     </div>
 
+
+                    {/*********** Contact Details *************/}
                     <div className='mt-20 gap-12 h-fit w-fit  mb-10 md:mb-36 flex flex-col   justify-center  items-center md:justify-between '>
                         <div className=' px-4  md:px-6   py-8 pr-0 md:pr-24  shadow-[0px_0px_10px_1px_rgba(0,0,0,0.25)] w-full lg:w-fit flex flex-row lg:flex-col xl:flex-row gap-6 rounded-lg items-center'>
                             <img className='object-contain' src="/assets/icons/phone-icon.png" alt=""/>
@@ -32,6 +36,8 @@ const ContactUs=()=>{
 
                     </div>
                 </div>
+
+                {/************ Send Message ***********/}
                 <div className='  mx-4 md:mx-0 lg:w-[400px] xl:w-[500px] h-fit shadow-[0px_0px_10px_1px_rgba(0,0,0,0.25)] px-8 py-5 bg-white rounded-2xl'>
 
                     <form className='flex  flex-col gap-4' action="#">

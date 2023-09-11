@@ -3,8 +3,9 @@ const Contact = () => {
   return(
       <>
           <img className="absolute h-[650px]   md:h-[600px]    blur-[3px] w-full object-cover -z-10 " src="/assets/images/locationBackground.jpg" alt=""/>
-          <div className='pb-28'>
 
+          {/********** Top Headings ************/}
+          <div className='pb-28'>
               <div className="  flex  flex-col  items-center">
             <span className='mt-28'>
                  <hr className="border-0 w-4 h-[3px] bg-red-400 rotate-90  -ms-2    "/>
@@ -19,6 +20,7 @@ const Contact = () => {
             <div className='flex mx-4 mb-20 xl:m-0 flex-col lg:flex-row justify-center gap-12 lg:gap-8 xl:gap-12'>
                 <div >
 
+                    {/************ Map *************/}
                     <iframe className='w-full lg:w-[500px]  xl:w-[650px] h-[530px] bg-gray-50 rounded-2xl shadow-[0px_0px_10px_1px_rgba(0,0,0,0.25)]'
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.9051711870015!2d68.79858617461322!3d27.720214024925387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3935d33c0905f7e9%3A0x13f5a86d6dd17a8b!2sSukkur%20IBA%20University!5e0!3m2!1sen!2s!4v1693900658337!5m2!1sen!2s"
                         allowFullScreen=""
@@ -26,6 +28,8 @@ const Contact = () => {
                         referrerPolicy="no-referrer-when-downgrade"
                     ></iframe>
 
+
+                    {/*********** Contact Details*************/}
                     <div className='mt-20 gap-12 h-fit  lg:gap-0 mb-10 md:mb-36 flex flex-col lg:flex-row  justify-center  items-center md:justify-between '>
                         <div className=' px-6   py-6  shadow-[0px_0px_10px_1px_rgba(0,0,0,0.25)] w-full lg:w-fit flex flex-row lg:flex-col xl:flex-row gap-6 rounded-lg items-center'>
                             <img className='object-contain' src="/assets/icons/phone-icon.png" alt=""/>
@@ -45,6 +49,8 @@ const Contact = () => {
                     </div>
                 </div>
 
+
+                {/*********** Send Message *************/}
                 <div className=' w-full lg:w-[400px] xl:w-[450px] h-fit shadow-[0px_0px_10px_1px_rgba(0,0,0,0.25)] px-8 py-5 bg-white rounded-2xl'>
 
                     <form className='flex flex-col gap-4' action="#">

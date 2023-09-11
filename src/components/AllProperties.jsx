@@ -15,6 +15,8 @@ const AllProperties = () => {
 
     return(
         <>
+
+            {/********** Buttons **********/}
         <div className='my-12 px-4 flex justify-center flex-wrap gap-6 sm:gap-12'>
             <button onClick={()=>{setShowall(true),setApartment(false),setVillaHouse(false),setPenthouses(false), setCurrent(all)}} className={`${(showall)?'bg-orange-600':'bg-black hover:text-orange-600 bg-opacity-[85%]'} text-white font-semibold px-6 py-3 rounded`}>Show All</button>
             <button onClick={()=>{setShowall(false),setApartment(true),setVillaHouse(false),setPenthouses(false), setCurrent(apartments)}} className={`${(apartment)?'bg-orange-600':'bg-black hover:text-orange-600 bg-opacity-[85%]'} text-white font-semibold px-6 py-3 rounded`}>Apartment</button>
@@ -22,6 +24,8 @@ const AllProperties = () => {
             <button onClick={()=>{setShowall(false),setApartment(false),setVillaHouse(false),setPenthouses(true), setCurrent(penthouse)}} className={`${(penthouses)?'bg-orange-600':'bg-black hover:text-orange-600 bg-opacity-[85%]'} text-white font-semibold px-6 py-3 rounded`}>Penthouse</button>
 
         </div>
+
+            {/*********** Property Cards ***********/}
             <div className='flex flex-wrap px-4 md:px-0 xl:px-4 mb-12 justify-center gap-12'>
 
                 {
@@ -30,6 +34,9 @@ const AllProperties = () => {
                     ))
                 }
             </div>
+
+
+            {/********** Pagination **************/}
             <div className='flex justify-center text-white gap-3 items-center my-20'>
                 <a className='h-10 w-10 bg-black rounded-full flex justify-center items-center hover:bg-orange-600 font-semibold cursor-pointer'> 1</a>
                 <a className='h-10 w-10 bg-orange-600 rounded-full flex justify-center items-center hover:bg-orange-600 font-semibold cursor-pointer'> 2</a>

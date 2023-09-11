@@ -8,6 +8,8 @@ const Properties=()=>{
     return(
         <>
         <div className='py-24'>
+
+{/******** Top Headings *********/}
 <div className='flex flex-col items-center'>
     <span className=''>
     <hr className="border-0 w-4 h-[3px] bg-red-400 rotate-90   -ms-1  "/>
@@ -16,6 +18,7 @@ const Properties=()=>{
     <h1 className='text-4xl mt-8 font-bold w-80 leading-snug text-center'>We Provide The Best Property You Like</h1>
 
 </div>
+            {/********** Property Cards *************/}
             <div className='p-4 xl:px-28 h-auto flex pt-20 gap-4 flex-wrap  justify-around'>
                 {
                     data.map((p)=>(
