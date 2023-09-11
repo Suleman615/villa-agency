@@ -2,7 +2,7 @@ import 'font-awesome/css/font-awesome.css';
 
 
 
-import { useState} from "react";
+import { useState, useEffect} from "react";
 
 const Slider=()=>{
 const [firstImage , setFirstImage]=useState(true)
@@ -27,15 +27,15 @@ const [firstImage , setFirstImage]=useState(true)
         if(thirdImage){setFirstImage(true); setSecondImage(false); setThirdImage(false)}
     }
 
-// useEffect(()=>{
-//
-//     const timeout = setInterval(()=>{
-//         gotoNext()
-//     },2000);
-//
-//
-//     return ()=> clearTimeout(timeout);
-// },[])
+
+
+    const timeout = setInterval(()=>{
+        gotoNext()
+        console.log("here")
+    },5000);
+
+
+
 
 
 
