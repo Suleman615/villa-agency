@@ -194,7 +194,7 @@ export const penthouse=[
     },
     {
         id:22,
-        flat: '120',
+        area: '120',
         floor : 3,
         rooms: 5,
         bath:4,
