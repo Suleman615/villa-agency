@@ -31,7 +31,6 @@ const [firstImage , setFirstImage]=useState(true)
 
     const timeout = setInterval(()=>{
         gotoNext()
-        console.log("here")
     },5000);
 
 
