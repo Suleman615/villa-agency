@@ -1,7 +1,7 @@
 import 'font-awesome/css/font-awesome.css';
 
 
-import {useState, useEffect} from "react";
+import {useState} from "react";
 
 const Slider = () => {
 

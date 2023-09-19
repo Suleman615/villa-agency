@@ -18,10 +18,10 @@ const AllProperties = () => {
 
             {/********** Buttons **********/}
         <div className='my-12 px-4 flex justify-center flex-wrap gap-6 sm:gap-12'>
-            <button onClick={()=>{setShowall(true),setApartment(false),setVillaHouse(false),setPenthouses(false), setCurrent(all)}} className={`${(showall)?'bg-orange-600':'bg-black hover:text-orange-600 bg-opacity-[85%]'} text-white font-semibold px-6 py-3 rounded`}>Show All</button>
-            <button onClick={()=>{setShowall(false),setApartment(true),setVillaHouse(false),setPenthouses(false), setCurrent(apartments)}} className={`${(apartment)?'bg-orange-600':'bg-black hover:text-orange-600 bg-opacity-[85%]'} text-white font-semibold px-6 py-3 rounded`}>Apartment</button>
-            <button onClick={()=>{setShowall(false),setApartment(false),setVillaHouse(true),setPenthouses(false), setCurrent(villas)}} className={`${(villaHouse)?'bg-orange-600':'bg-black hover:text-orange-600 bg-opacity-[85%]'} text-white font-semibold px-6 py-3 rounded`}>Villa House</button>
-            <button onClick={()=>{setShowall(false),setApartment(false),setVillaHouse(false),setPenthouses(true), setCurrent(penthouse)}} className={`${(penthouses)?'bg-orange-600':'bg-black hover:text-orange-600 bg-opacity-[85%]'} text-white font-semibold px-6 py-3 rounded`}>Penthouse</button>
+            <button onClick={()=>{setShowall(true);setApartment(false);setVillaHouse(false);setPenthouses(false); setCurrent(all)}} className={`${(showall)?'bg-orange-600':'bg-black hover:text-orange-600 bg-opacity-[85%]'} text-white font-semibold px-6 py-3 rounded`}>Show All</button>
+            <button onClick={()=>{setShowall(false);setApartment(true);setVillaHouse(false);setPenthouses(false); setCurrent(apartments)}} className={`${(apartment)?'bg-orange-600':'bg-black hover:text-orange-600 bg-opacity-[85%]'} text-white font-semibold px-6 py-3 rounded`}>Apartment</button>
+            <button onClick={()=>{setShowall(false);setApartment(false);setVillaHouse(true);setPenthouses(false); setCurrent(villas)}} className={`${(villaHouse)?'bg-orange-600':'bg-black hover:text-orange-600 bg-opacity-[85%]'} text-white font-semibold px-6 py-3 rounded`}>Villa House</button>
+            <button onClick={()=>{setShowall(false);setApartment(false);setVillaHouse(false);setPenthouses(true); setCurrent(penthouse)}} className={`${(penthouses)?'bg-orange-600':'bg-black hover:text-orange-600 bg-opacity-[85%]'} text-white font-semibold px-6 py-3 rounded`}>Penthouse</button>
 
         </div>
 
@@ -41,9 +41,10 @@ const AllProperties = () => {
                 <a className='h-10 w-10 bg-black rounded-full flex justify-center items-center hover:bg-orange-600 font-semibold cursor-pointer'> 1</a>
                 <a className='h-10 w-10 bg-orange-600 rounded-full flex justify-center items-center hover:bg-orange-600 font-semibold cursor-pointer'> 2</a>
                 <a className='h-10 w-10 bg-black rounded-full flex justify-center items-center hover:bg-orange-600 font-semibold cursor-pointer'> 3</a>
-                <a className='h-10 w-10 bg-black rounded-full flex justify-center items-center hover:bg-orange-600 font-semibold cursor-pointer'><i
-                    className="fa fa-angle-right"></i><i
-                    className="fa fa-angle-right"></i></a>
+                <a className='h-10 w-10 bg-black rounded-full flex justify-center items-center hover:bg-orange-600 font-semibold cursor-pointer'>
+                    <i className="fa fa-angle-right"></i>
+                    <i className="fa fa-angle-right"></i>
+                </a>
 
             </div>
         </>
