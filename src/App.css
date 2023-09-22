@@ -1,9 +1,7 @@
 .navanimation{
     animation-name: example;
     animation-duration: 0.8s;
-
 }
-
 
 @keyframes example {
     0%{height: 0}

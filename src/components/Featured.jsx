@@ -1,10 +1,12 @@
 import {useState} from "react";
 
 const Featured=()=>{
-    const [answer1 , setAnswer1]=useState(true)
-    const [answer2 , setAnswer2]=useState(false)
-    const [answer3, setAnswer3]=useState(false)
 
+    const [answers, setAnswer]=useState({
+        answer1: true,
+        answer2: false,
+        answer3: false
+    })
 
 
 
@@ -29,23 +31,23 @@ const Featured=()=>{
                 <p className="font-bold text-5xl pr-16 text-start  leading-tight mt-4 ">Best Appartment & Sea View</p>
                 <div className="bg-gray-100 rounded-lg px-4 mt-20 ">
 
-                    <p onClick={()=>{setAnswer1(!answer1),setAnswer2(false), setAnswer3(false)}} className={` font-bold  py-4 ${(answer1)?'text-orange-600':'text-black'}  cursor-pointer border-b-[1px] border-gray-300 text-lg` }>Best useful links ?</p>
-                    { answer1 && <p className=" overflow-hidden py-4 text-[16px]">Get <span className="font-bold">the best villa</span> website
+                    <p onClick={()=>{setAnswer({...answers,answer1: !answers.answer1,answer2: false,answer3: false})}} className={` font-bold  py-4 ${(answers.answer1)?'text-orange-600':'text-black'}  cursor-pointer border-b-[1px] border-gray-300 text-lg` }>Best useful links ?</p>
+                    { answers.answer1 && <p className=" overflow-hidden py-4 text-[16px]">Get <span className="font-bold">the best villa</span> website
                         template in HTML CSS and Bootstrap for your business. TemplateMo provides you the <a
                             className="text-blue-600 font-semibold"
                             href="">best free CSS templates</a> in the world. Please tell your friends about it.</p>}
 
 
-                    <p onClick={()=>{setAnswer2(!answer2), setAnswer1(false), setAnswer3(false)}} className={` font-bold  py-4 ${(answer2)?'text-orange-600':'text-black'}  cursor-pointer border-b-[1px] border-gray-300 text-lg` }>How Does this work ?</p>
+                    <p onClick={()=>{setAnswer({...answers,answer1: false,answer2: !answers.answer2,answer3: false})}} className={` font-bold  py-4 ${(answers.answer2)?'text-orange-600':'text-black'}  cursor-pointer border-b-[1px] border-gray-300 text-lg` }>How Does this work ?</p>
                     {
-                        answer2 && <p className=" py-4 text-[16px]">Dolor <span className="font-bold">almesit amet</span>, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur <span
+                        answers.answer2 && <p className=" py-4 text-[16px]">Dolor <span className="font-bold">almesit amet</span>, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur <span
                                 className="text-red-400 text-sm tracking-wider"
                                >adipiscing</span> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>}
 
 
-                    <p onClick={()=>{setAnswer3(!answer3), setAnswer2(false), setAnswer1(false)}} className={` font-bold  py-4 border-b-[1px] ${(answer3)?'text-orange-600':'text-black border-none'}  cursor-pointer  border-gray-300 text-lg` }>Why is Villa Agency the best ?</p>
+                    <p onClick={()=>{setAnswer({...answers,answer1: false,answer2: false,answer3: !answers.answer3})}} className={` font-bold  py-4 border-b-[1px] ${(answers.answer3)?'text-orange-600':'text-black border-none'}  cursor-pointer  border-gray-300 text-lg` }>Why is Villa Agency the best ?</p>
                     {
-                        answer3 && <p className=" py-4 text-[16px]">Dolor <span className="font-bold">almesit amet</span>, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur <span
+                        answers.answer3 && <p className=" py-4 text-[16px]">Dolor <span className="font-bold">almesit amet</span>, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur <span
                             className="text-red-400 text-sm tracking-wider"
                         >adipiscing</span> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>}
                 </div>

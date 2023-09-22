@@ -13,7 +13,6 @@ const Slider = () => {
 
     const gotoPrevious = () => {
         if (images.firstImage) {
-
             setImages({...images, firstImage: false, secondImage: false, thirdImage: true})
         }
         if (images.secondImage) {

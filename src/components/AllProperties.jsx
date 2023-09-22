@@ -4,10 +4,12 @@ import {villas, apartments, penthouse} from "./dummyData.jsx";
 import PropertyCard from "./PropertyCard.jsx";
 
 const AllProperties = () => {
-    const [showall, setShowall]=useState(true)
-    const [apartment, setApartment]=useState(false)
-    const [villaHouse, setVillaHouse]=useState(false)
-    const [penthouses, setPenthouses]=useState(false)
+    const [category,setCategory]=useState({
+        showall: true,
+        apartment: false,
+        villaHouse:false,
+        penthouse:false
+    })
 
     const all=villas.slice(0,3).concat(apartments.slice(0,3)).concat(penthouse.slice(0,3))
 
@@ -18,10 +20,10 @@ const AllProperties = () => {
 
             {/********** Buttons **********/}
         <div className='my-12 px-4 flex justify-center flex-wrap gap-6 sm:gap-12'>
-            <button onClick={()=>{setShowall(true);setApartment(false);setVillaHouse(false);setPenthouses(false); setCurrent(all)}} className={`${(showall)?'bg-orange-600':'bg-black hover:text-orange-600 bg-opacity-[85%]'} text-white font-semibold px-6 py-3 rounded`}>Show All</button>
-            <button onClick={()=>{setShowall(false);setApartment(true);setVillaHouse(false);setPenthouses(false); setCurrent(apartments)}} className={`${(apartment)?'bg-orange-600':'bg-black hover:text-orange-600 bg-opacity-[85%]'} text-white font-semibold px-6 py-3 rounded`}>Apartment</button>
-            <button onClick={()=>{setShowall(false);setApartment(false);setVillaHouse(true);setPenthouses(false); setCurrent(villas)}} className={`${(villaHouse)?'bg-orange-600':'bg-black hover:text-orange-600 bg-opacity-[85%]'} text-white font-semibold px-6 py-3 rounded`}>Villa House</button>
-            <button onClick={()=>{setShowall(false);setApartment(false);setVillaHouse(false);setPenthouses(true); setCurrent(penthouse)}} className={`${(penthouses)?'bg-orange-600':'bg-black hover:text-orange-600 bg-opacity-[85%]'} text-white font-semibold px-6 py-3 rounded`}>Penthouse</button>
+            <button onClick={()=>{setCategory({...category,showall: true,apartment: false,villaHouse: false,penthouse: false});setCurrent(all)}} className={`${(category.showall)?'bg-orange-600':'bg-black hover:text-orange-600 bg-opacity-[85%]'} text-white font-semibold px-6 py-3 rounded`}>Show All</button>
+            <button onClick={()=>{setCategory({...category,showall: false,apartment: true,villaHouse: false,penthouse: false}); setCurrent(apartments)}} className={`${(category.apartment)?'bg-orange-600':'bg-black hover:text-orange-600 bg-opacity-[85%]'} text-white font-semibold px-6 py-3 rounded`}>Apartment</button>
+            <button onClick={()=>{setCategory({...category,showall: false,apartment: false,villaHouse: true,penthouse: false}); setCurrent(villas)}} className={`${(category.villaHouse)?'bg-orange-600':'bg-black hover:text-orange-600 bg-opacity-[85%]'} text-white font-semibold px-6 py-3 rounded`}>Villa House</button>
+            <button onClick={()=>{setCategory({...category,showall: false,apartment: false,villaHouse: false,penthouse: true}); setCurrent(penthouse)}} className={`${(category.penthouse)?'bg-orange-600':'bg-black hover:text-orange-600 bg-opacity-[85%]'} text-white font-semibold px-6 py-3 rounded`}>Penthouse</button>
 
         </div>
 

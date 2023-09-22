@@ -65,9 +65,13 @@ const Details=({content})=>{
 
 
 const Ideal=()=>{
-    const [apartment , setApartment]=useState(true)
-    const [villa , setVilla]=useState(false)
-    const [penthouse , setPenthouse]=useState(false)
+
+
+    const [category, setCategory]=useState({
+        apartment:true,
+        villa:false,
+        penthouse:false
+    })
 
 
     const data=[
@@ -123,9 +127,9 @@ const Ideal=()=>{
             <div className='flex flex-col md:flex-row justify-between ' >
                 <h1 className='text-4xl leading-snug font-bold w-full   md:w-[300px] text-center md:text-start  mt-4'>Find Your Best Deal Right Now!</h1>
                 <span className='flex  flex-wrap justify-center mt-10 md:mt-0 gap-5 lg:place-self-end '>
-                    <span onClick={()=>{setApartment(true);setVilla(false);setPenthouse(false);setContent(data[0])}} className={`px-[28px] py-[12px] h-fit   text-white ${(apartment)?'bg-orange-600 border-orange-600': 'bg-black border-black'} font-semibold cursor-pointer rounded outline-none  border-[1px]  hover:border-gray-200`}  >Apartment</span>
-                    <span onClick={()=>{setApartment(false);setVilla(true);setPenthouse(false);setContent(data[1])}} className={`px-[28px] py-[12px]  h-fit text-white ${(villa)?'bg-orange-600 border-orange-600': 'bg-black border-black'} font-semibold cursor-pointer rounded border-[1px]  hover:border-gray-200 `}>Villa House</span>
-                    <span onClick={()=>{setApartment(false);setVilla(false);setPenthouse(true);setContent(data[2])}} className={`px-[30px] py-[12px]  h-fit text-white ${(penthouse)?'bg-orange-600 border-orange-600': 'bg-black border-black'} font-semibold cursor-pointer rounded border-[1px]  hover:border-gray-200 `}>Penthouse</span>
+                    <span onClick={()=>{setCategory({...category,apartment: true,villa: false,penthouse: false});setContent(data[0])}} className={`px-[28px] py-[12px] h-fit   text-white ${(category.apartment)?'bg-orange-600 border-orange-600': 'bg-black border-black'} font-semibold cursor-pointer rounded outline-none  border-[1px]  hover:border-gray-200`}  >Apartment</span>
+                    <span onClick={()=>{setCategory({...category,apartment: false,villa: true,penthouse: false});setContent(data[1])}} className={`px-[28px] py-[12px]  h-fit text-white ${(category.villa)?'bg-orange-600 border-orange-600': 'bg-black border-black'} font-semibold cursor-pointer rounded border-[1px]  hover:border-gray-200 `}>Villa House</span>
+                    <span onClick={()=>{setCategory({...category,apartment: false,villa: false,penthouse: true});setContent(data[2])}} className={`px-[30px] py-[12px]  h-fit text-white ${(category.penthouse)?'bg-orange-600 border-orange-600': 'bg-black border-black'} font-semibold cursor-pointer rounded border-[1px]  hover:border-gray-200 `}>Penthouse</span>
                 </span>
             </div>
             <Details content={content}/>
