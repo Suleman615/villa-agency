@@ -41,14 +41,14 @@ const ContactUs=()=>{
                 <div className='  mx-4 md:mx-0 lg:w-[400px] xl:w-[500px] h-fit shadow-[0px_0px_10px_1px_rgba(0,0,0,0.25)] px-8 py-5 bg-white rounded-2xl'>
 
                     <form className='flex  flex-col gap-4' action="#">
-                        <label className='mt-4' htmlFor="">Full Name</label>
-                        <input className='bg-gray-100 p-3 rounded-3xl' type="text" placeholder='Your Name'/>
-                        <label className='mt-4' htmlFor="">Email Address</label>
-                        <input className='bg-gray-100 p-3 rounded-3xl' type="text" placeholder='Your Email'/>
-                        <label className='mt-4' htmlFor="">Subject</label>
-                        <input className='bg-gray-100 p-3 rounded-3xl' type="text" placeholder='Subject...'/>
-                        <label className='mt-4' htmlFor="">Message</label>
-                        <textarea className='bg-gray-100 p-3 rounded-3xl' name="" id="" cols="30" rows="6" placeholder='Your Message'></textarea>
+                        <label className='mt-4' htmlFor="name">Full Name</label>
+                        <input className='bg-gray-100 p-3 rounded-3xl' id='name' required autoComplete='ABC' type="text" placeholder='Your Name'/>
+                        <label className='mt-4' htmlFor="mail">Email Address</label>
+                        <input className='bg-gray-100 p-3 rounded-3xl' id='mail' required type="text" placeholder='Your Email'/>
+                        <label className='mt-4' htmlFor="subject">Subject</label>
+                        <input className='bg-gray-100 p-3 rounded-3xl' id='subject' required type="text" placeholder='Subject...'/>
+                        <label className='mt-4' htmlFor="message">Message</label>
+                        <textarea className='bg-gray-100 p-3 rounded-3xl' required id="message" cols="30" rows="6" placeholder='Your Message'></textarea>
                         <button className='bg-black text-white font-semibold  hover:bg-orange-600 w-fit px-4 py-2 rounded-3xl my-4 '>Send Message</button>
                     </form>
                 </div>

@@ -109,6 +109,7 @@ const Ideal=()=>{
             detailText2: 'Swag fanny pack lyft blog twee. JOMO ethical copper mug, succulents typewriter shaman DIY kitsch twee taiyaki fixie hella venmo after messenger poutine next level humblebrag swag franzen.'
         }
     ]
+
     const [content,setContent]=useState(data[0])
 
 

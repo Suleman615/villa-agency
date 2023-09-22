@@ -1,7 +1,7 @@
 import 'font-awesome/css/font-awesome.css';
 
 
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
 const Slider = () => {
 
@@ -12,38 +12,33 @@ const Slider = () => {
     })
 
     const gotoPrevious = () => {
-        if (images.firstImage) {
-            setImages({...images, firstImage: false, secondImage: false, thirdImage: true})
-        }
-        if (images.secondImage) {
-            setImages({...images, firstImage: true, secondImage: false, thirdImage: false})
-
-        }
-        if (images.thirdImage) {
-            setImages({...images, firstImage: false, secondImage: true, thirdImage: false})
-
-        }
+        setImages(images=>{
+            if(images.firstImage) return{ firstImage: false, secondImage: false, thirdImage: true}
+            if(images.secondImage) return{ firstImage: true, secondImage: false, thirdImage: false}
+            if(images.thirdImage) return{ firstImage: false, secondImage: true, thirdImage: false}
+        })
     }
 
     const gotoNext = () => {
-        if (images.firstImage) {
+        setImages(images=>{
+            if(images.firstImage) return{ firstImage: false, secondImage: true, thirdImage: false}
+            if(images.secondImage) return{ firstImage: false, secondImage: false, thirdImage: true}
+            if(images.thirdImage) return{ firstImage: true, secondImage: false, thirdImage: false}
+        })
 
-            setImages({...images, firstImage: false, secondImage: true, thirdImage: false})
-        }
-        if (images.secondImage) {
-            setImages({...images, firstImage: false, secondImage: false, thirdImage: true})
-
-        }
-        if (images.thirdImage) {
-            setImages({...images, firstImage: true, secondImage: false, thirdImage: false})
-
-        }
     }
 
 
-    const timeout = setInterval(() => {
-        gotoNext()
-    }, 5000);
+
+    useEffect(()=>{
+        const timeout = setInterval(() => {
+            gotoNext()
+        }, 5000);
+        return () => clearInterval(timeout);
+    },[])
+
+
+
 
 
     return (
